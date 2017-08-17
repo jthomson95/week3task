@@ -1,0 +1,18 @@
+h3{
+	color: #3498DB;
+}
+
+h4{
+	color: #3498DB;
+}
+
+
+.allEmps {
+padding: 20px 100px;
+border: 1px solid;
+}
+
+.allEmps ul li {
+list-style-type: none;
+padding: 3px;
+}
