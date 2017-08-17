@@ -1,4 +1,9 @@
+<h3>
+Departments:
+</h3>
+<div class="dep">
+<p>Click on an department to view its employees:</p>
 <ul>
-    Departments:
     <li *ngFor="let department of db.departments|async" (click)="onClick(department)">{{department.name}}</li>
 </ul>
+</div>

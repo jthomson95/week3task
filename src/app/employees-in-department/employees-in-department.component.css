@@ -1,0 +1,14 @@
+h3{
+	color: #3498DB;
+	text-decoration: underline; 
+}
+
+.empDep{
+	border-bottom: 1px solid;
+}
+.empDep ul li{
+	list-style-type: none;
+	padding: 3px;
+	padding: 0px 100px;
+}
+
