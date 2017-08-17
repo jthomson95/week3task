@@ -15,33 +15,15 @@ export class NewEmployeeComponent implements OnInit {
     this.newEmp = new NewEmployee("","","","","","","",0);
   }
 
-  // @ViewChild('firstNameInput') firstNameInput; 
-  // @ViewChild('lastNameInput') lastNameInput; 
-  // @ViewChild('addressInput') addressInput; 
-  // @ViewChild('postcodeInput') postcodeInput; 
-  // @ViewChild('townInput') townInput; 
-  // @ViewChild('ibanInput') ibanInput; 
-  // @ViewChild('ninInput') ninInput; 
-  // @ViewChild('salaryInput') salaryInput;
-
   ngOnInit() {
   }
   
   submitClicked(): void {
-    // get the html elements
-    // var firstName = this.firstNameInput.nativeElement.value;
-    // var lastName = this.lastNameInput.nativeElement.value;
-    // var address = this.addressInput.nativeElement.value;
-    // var postcode = this.postcodeInput.nativeElement.value;
-    // var town = this.townInput.nativeElement.value;
-    // var iban = this.ibanInput.nativeElement.value;
-    // var nin = this.ninInput.nativeElement.value;
-    // var salary = this.salaryInput.nativeElement.value;
-
-    // var newEmployee = new NewEmployee(firstName, lastName, address,postcode)
-    // var newEmployee = new NewEmployee(firstName, lastName, address, postcode, town, iban, nin, salary);
-    // this.db.addNewEmployee(newEmployee);
-    this.db.addNewEmployee(this.newEmp);
+    this.db.addNewEmployee(this.newEmp).subscribe(res => {
+      if(res) {
+        alert("Employee added!");
+      }
+    });
   }
 
 }

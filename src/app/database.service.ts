@@ -16,12 +16,11 @@ export class DatabaseService {
   addNewEmployee(newEmployee: NewEmployee) {
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let body = JSON.stringify(newEmployee);
-    console.log(body);
     const options = {
       headers: new HttpHeaders().set('Content-Type', 'application/json'),
     };
 
-    return this.http.post("/api/employee", body, options).subscribe();
+    return this.http.post("/api/employee", body, options);
   }
 
   getEmployeesInDepartment(dep: Department) {
