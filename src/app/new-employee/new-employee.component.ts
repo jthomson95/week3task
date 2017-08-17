@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { NewEmployee } from '../new-employee';
+import { DatabaseService } from '../database.service';
 
 @Component({
   selector: 'employees-new-employee',
@@ -7,7 +9,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 })
 export class NewEmployeeComponent implements OnInit {
 
-  constructor(private elRef: ElementRef) { }
+  constructor(private elRef: ElementRef, private db: DatabaseService) { }
 
   @ViewChild('firstNameInput') firstNameInput; 
   @ViewChild('lastNameInput') lastNameInput; 
@@ -16,7 +18,6 @@ export class NewEmployeeComponent implements OnInit {
   @ViewChild('townInput') townInput; 
   @ViewChild('ibanInput') ibanInput; 
   @ViewChild('ninInput') ninInput; 
-  @ViewChild('bankAccountInput') bankAccountInput; 
   @ViewChild('salaryInput') salaryInput;
 
   ngOnInit() {
@@ -31,10 +32,10 @@ export class NewEmployeeComponent implements OnInit {
     var town = this.firstNameInput.nativeElement.value;
     var iban = this.firstNameInput.nativeElement.value;
     var nin = this.firstNameInput.nativeElement.value;
-    var bankAccount = this.firstNameInput.nativeElement.value;
     var salary = this.firstNameInput.nativeElement.value;
 
-    // var newEmployee = new Employee
+    var newEmployee = new NewEmployee(firstName, lastName, address, postcode, town, iban, nin, salary);
+    this.db.addNewEmployee(newEmployee);
   }
 
 }
