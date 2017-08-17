@@ -1,3 +1,18 @@
+
+#newEmployee form{
+	padding: 20px 100px;
+	border: 1px solid
+}
+
+#newEmployee form h3{
+	color: #3498DB;
+}
+
+
+.item{
+	padding: 5px;
+}
+
 div label {
     display: inline-block;
     width: 200px;
@@ -5,4 +20,9 @@ div label {
 
 div input {
     width: 200px;
+}
+
+#newEmployee button{
+	background-color: #3498DB;
+	color: white;
 }
