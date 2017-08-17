@@ -1,0 +1,17 @@
+nav{
+	background-color: #3498DB;
+}
+
+.navbar-header a{
+	color: white;
+	font-size: 40px;
+}
+
+.options ul li a{
+	color: white;
+	font-size: 15px;
+}
+
+.options ul li a:hover{
+	background-color: blue;
+}

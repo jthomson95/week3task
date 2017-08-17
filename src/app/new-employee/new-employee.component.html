@@ -1,44 +1,44 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 <div id="newEmployee">
     <form action="#">
+    <h3>
         Add new employee:
-        <div >
+        </h3>
+          <div class="item">
             <label>First name:</label>
             <input #firstNameInput type="text" name="firstName" placeholder="First Name">
         </div>
-        <div>
+        <div class="item">
             <label>Last name:</label>
             <input #lastNameInput type="text" name="lastName" placeholder="Last Name">
         </div>
-        <div>
+        <div class="item">
             <label>Address:</label>
             <input #addressInput type="text" name="address" placeholder="Address">
         </div>
-        <div>
+        <div class="item">
             <label>Postcode:</label>
             <input #postcodeInput type="text" name="postcode" placeholder="Postcode">
         </div>
-        <div>
+        <div class="item">
             <label>Town:</label>
             <input #townInput type="text" name="town" placeholder="Town">
         </div>
-        <div>
+        <div class="item">
             <label>IBAN:</label>
-            <input #ibanInput type="text" name="nationalInsuranceNumber" placeholder="National Insurance Number">
+            <input #ibanInput type="text" name="IBAN" placeholder="IBAN">
         </div>
-        <div>
+        <div class="item">
             <label>NIN:</label>
             <input #ninInput type="text" name="nationalInsuranceNumber" placeholder="National Insurance Number">
         </div>
-        <div>
-            <label>Bank Account Number:</label>
-            <input #bankAccountInput type="text" name="bankAccountNumber" placeholder="Bank Account Number">
-        </div>
-        <div>
+        <div class="item">
             <label>Starting Salary:</label>
             <input #salaryInput type="number" name="startingSalary" placeholder="25000">
         </div>
         <button type="button" (click)="submitClicked()">Submit</button>
     </form>
+     
 </div>
