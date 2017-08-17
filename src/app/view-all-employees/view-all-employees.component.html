@@ -1,0 +1,4 @@
+<ul>
+    All employees:
+    <li *ngFor="let employee of db.employees|async" (click)="employeeClicked(employee)">{{employee.firstName}} {{employee.lastName}}</li>
+</ul>
