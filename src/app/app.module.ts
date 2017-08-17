@@ -1,23 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NewEmployeeComponent } from './new-employee/new-employee.component';
 import { DatabaseService } from './database.service';
-import { ViewAllEmployeesComponent } from './view-all-employees/view-all-employees.component'
+import { ViewAllEmployeesComponent } from './view-all-employees/view-all-employees.component';
+import { ViewAllDepartmentsComponent } from './view-all-departments/view-all-departments.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component'
+import { SwitchboardService } from './switchboard.service'
 
 @NgModule({
   declarations: [
     AppComponent,
     NewEmployeeComponent,
-    ViewAllEmployeesComponent
+    ViewAllEmployeesComponent,
+    ViewAllDepartmentsComponent,
+    EmployeeDetailsComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [DatabaseService],
+  providers: [DatabaseService, SwitchboardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
