@@ -16,4 +16,13 @@ export class SwitchboardService {
      } 
   }
 
+  private employeesInDepartmentWatcher = new Subject<Employee[]>(); 
+  public employeesInDepartment$ = this.employeesInDepartmentWatcher.asObservable(); 
+  
+  public switchEmployeesInDepartment(employees: Employee[]) {
+     if (employees) { 
+        this.employeesInDepartmentWatcher.next(employees); 
+     } 
+  }
+
 }

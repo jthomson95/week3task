@@ -9,7 +9,8 @@ import { DatabaseService } from './database.service';
 import { ViewAllEmployeesComponent } from './view-all-employees/view-all-employees.component';
 import { ViewAllDepartmentsComponent } from './view-all-departments/view-all-departments.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component'
-import { SwitchboardService } from './switchboard.service'
+import { SwitchboardService } from './switchboard.service';
+import { EmployeesInDepartmentComponent } from './employees-in-department/employees-in-department.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SwitchboardService } from './switchboard.service'
     NewEmployeeComponent,
     ViewAllEmployeesComponent,
     ViewAllDepartmentsComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
+    EmployeesInDepartmentComponent
   ],
   imports: [
     BrowserModule,
