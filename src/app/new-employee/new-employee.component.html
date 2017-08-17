@@ -1,0 +1,42 @@
+<div id="newEmployee">
+    <form action="#">
+        Add new employee:
+        <div>
+            <label>First name:</label>
+            <input #firstNameInput type="text" name="firstName" placeholder="First Name">
+        </div>
+        <div>
+            <label>Last name:</label>
+            <input #lastNameInput type="text" name="lastName" placeholder="Last Name">
+        </div>
+        <div>
+            <label>Address:</label>
+            <input #addressInput type="text" name="address" placeholder="Address">
+        </div>
+        <div>
+            <label>Postcode:</label>
+            <input #postcodeInput type="text" name="postcode" placeholder="Postcode">
+        </div>
+        <div>
+            <label>Town:</label>
+            <input #townInput type="text" name="town" placeholder="Town">
+        </div>
+        <div>
+            <label>IBAN:</label>
+            <input #ibanInput type="text" name="nationalInsuranceNumber" placeholder="National Insurance Number">
+        </div>
+        <div>
+            <label>NIN:</label>
+            <input #ninInput type="text" name="nationalInsuranceNumber" placeholder="National Insurance Number">
+        </div>
+        <div>
+            <label>Bank Account Number:</label>
+            <input #bankAccountInput type="text" name="bankAccountNumber" placeholder="Bank Account Number">
+        </div>
+        <div>
+            <label>Starting Salary:</label>
+            <input #salaryInput type="number" name="startingSalary" placeholder="25000">
+        </div>
+        <button type="button" (click)="submitClicked()">Submit</button>
+    </form>
+</div>

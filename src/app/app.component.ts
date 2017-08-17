@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NewEmployeeComponent } from './new-employee/new-employee.component'
 
 @Component({
   selector: 'employees-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'employees';
+
 }
