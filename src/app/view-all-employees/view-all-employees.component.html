@@ -1,4 +1,11 @@
+<h3>
+All Employees
+</h3>
+<div class="allEmps">
+<h4>
+Name:
+</h4>
 <ul>
-    All employees:
     <li *ngFor="let employee of db.employees|async" (click)="employeeClicked(employee)">{{employee.firstName}} {{employee.lastName}}</li>
 </ul>
+</div>
