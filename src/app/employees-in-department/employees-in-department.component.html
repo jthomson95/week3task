@@ -1,0 +1,9 @@
+
+<div class="empDep">
+<ul *ngIf="employees">
+ <h3>
+	Employees in department:
+  </h3>
+    <li *ngFor="let employee of employees">{{employee.firstName}}</li>
+</ul>
+</div>
