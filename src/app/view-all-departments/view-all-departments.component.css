@@ -1,0 +1,18 @@
+h3{
+	color: #3498DB;
+	padding-left: 40px;
+	text-decoration: underline; 
+}
+
+.dep{
+	padding: 20px 100px;
+	
+}
+
+.dep ul li{
+list-style-type: none;
+}
+
+p{
+	color: #3498DB;
+}

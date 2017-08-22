@@ -1,11 +1,13 @@
 
 #newEmployee form{
-	padding: 20px 100px;
-	border: 1px solid;
+	padding: 20px 120px;
+	border-bottom: 1px;
 }
 
-#newEmployee form h3{
+h3{
 	color: #3498DB;
+	padding-left: 40px;
+    text-decoration: underline; 
 }
 
 
@@ -19,7 +21,7 @@ div label {
 }
 
 div input {
-    width: 200px;
+    width: 250px;
 }
 
 #newEmployee button{

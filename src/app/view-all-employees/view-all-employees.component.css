@@ -1,5 +1,7 @@
 h3{
 	color: #3498DB;
+	padding-left: 40px;
+	text-decoration: underline; 
 }
 
 h4{
@@ -8,8 +10,8 @@ h4{
 
 
 .allEmps {
-padding: 20px 100px;
-border: 1px solid;
+padding: 10px 100px;
+border-bottom: 1px solid;
 }
 
 .allEmps ul li {
