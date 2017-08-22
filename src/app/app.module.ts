@@ -10,7 +10,9 @@ import { ViewAllEmployeesComponent } from './view-all-employees/view-all-employe
 import { ViewAllDepartmentsComponent } from './view-all-departments/view-all-departments.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component'
 import { SwitchboardService } from './switchboard.service';
-import { EmployeesInDepartmentComponent } from './employees-in-department/employees-in-department.component'
+import { EmployeesInDepartmentComponent } from './employees-in-department/employees-in-department.component';
+import { AddSalesEmployeeComponent } from './add-sales-employee/add-sales-employee.component';
+import { NewSalesEmployeeComponent } from './new-sales-employee/new-sales-employee.component'
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { EmployeesInDepartmentComponent } from './employees-in-department/employ
     ViewAllEmployeesComponent,
     ViewAllDepartmentsComponent,
     EmployeeDetailsComponent,
-    EmployeesInDepartmentComponent
+    EmployeesInDepartmentComponent,
+    AddSalesEmployeeComponent,
+    NewSalesEmployeeComponent
   ],
   imports: [
     BrowserModule,

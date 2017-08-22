@@ -25,4 +25,13 @@ export class SwitchboardService {
      } 
   }
 
+  private employeeToSalesEmployeeWatcher = new Subject<Employee>(); 
+  public employeeToSalesEmployee$ = this.employeeToSalesEmployeeWatcher.asObservable(); 
+  
+  public switchEmployeeToSalesEmployee(employee: Employee) {
+     if (employee) { 
+        this.employeeToSalesEmployeeWatcher.next(employee); 
+     } 
+  }
+
 }
