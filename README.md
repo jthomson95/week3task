@@ -3,15 +3,13 @@ This is the Express server implementation for Week 3 of the Kainos TDP. This pro
 
 ## Getting Started
 Clone the repo:
-```git clone https://github.com/jthomson95/week3task.git
-```
+```git clone https://github.com/jthomson95/week3task.git```
+
 Navigate to the cloned repo and execute:
-```ng serve
-```
+```ng serve```
 
 In any browser of your choice, go to the following URL:
-```http://localhost:8080
-```
+```http://localhost:8080```
 
 ### Prerequisites
 You must have: node & AngularCLI
